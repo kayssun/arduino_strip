@@ -23,15 +23,20 @@ module ArduinoStrip
     end
 
     def set_color(position , color)
-      @serial.write "#{position},#{color.r},#{color.g},#{color.b}"
+      @serial.write "#{position},#{color.r},#{color.g},#{color.b}\n" if @connected
     end
 
     def show
-      @serial.write '-1,0,0,0'
+      @serial.write "-1,0,0,0\n" if @connected
     end
 
     def hide
-      @serial.write '-2,0,0,0'
+      @serial.write "-2,0,0,0\n" if @connected
+    end
+
+    def blank
+      @serial.write "-3,0,0,0\n" if @connected
+      @serial.write "-1,0,0,0\n" if @connected
     end
 
   end
