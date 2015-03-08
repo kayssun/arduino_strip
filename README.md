@@ -9,7 +9,7 @@ It is probably not fast enough for animations.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'arduino_strip'
+gem 'arduino_strip', :git => 'git://github.com/kayssun/arduino_strip.git'
 ```
 
 And then execute:
