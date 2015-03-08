@@ -21,7 +21,7 @@ module ArduinoStrip
 
     def self.by_name(name)
       if COLORS[name]
-        Color.new(COLORS[name][0], COLORS[name][1], COLORS[name][2])
+        Color.new(*COLORS[name])
       else
         Color.new(0,0,0) #or should this be nil?
       end
