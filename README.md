@@ -1,6 +1,8 @@
 # ArduinoStrip
 
-TODO: Write a gem description
+This gem allows to you set colors on a LED strip connected to an Arduino.
+It communicates via USB with the Arduino and allows you to set the color of each LED.
+It is probably not fast enough for animations.
 
 ## Installation
 
@@ -24,7 +26,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/arduino_strip/fork )
+1. Fork it ( https://github.com/kayssun/arduino_strip/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
